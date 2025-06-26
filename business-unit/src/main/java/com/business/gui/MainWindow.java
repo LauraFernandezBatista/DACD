@@ -10,7 +10,7 @@ public class MainWindow extends JFrame {
     private JList<String> historyList;
     private final String eventstoreRoot;
 
-    public MainWindow(String eventstoreRoot) {
+    public MainWindow(String eventstoreRoot){
         this.eventstoreRoot = eventstoreRoot;
 
         setTitle("Business Unit");

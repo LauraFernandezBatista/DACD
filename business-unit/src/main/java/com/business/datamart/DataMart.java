@@ -49,7 +49,7 @@ public class DataMart {
     }
 
     public void insertVideoEvent(VideoEvent v) throws SQLException {
-        System.out.println("Insertando vídeo: " + v.title + " | " + v.description);
+
 
         String sql = "INSERT INTO videos (ts, ss, title, description, videoUrl) VALUES (?, ?, ?, ?, ?)";
         try (PreparedStatement ps = conn.prepareStatement(sql)) {
