@@ -32,10 +32,6 @@ public class DataMart {
                     "description TEXT," +
                     "videoUrl TEXT" +   // CORREGIDO
                     ")");
-            stmt.execute("CREATE TABLE IF NOT EXISTS search_history (" +
-                    "id INTEGER PRIMARY KEY AUTOINCREMENT, " +
-                    "topic TEXT, " +
-                    "timestamp TEXT)");
 
         }
     }
