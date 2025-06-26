@@ -30,7 +30,7 @@ public class DataMart {
                     "ss TEXT," +
                     "title TEXT," +
                     "description TEXT," +
-                    "videoUrl TEXT" +   // CORREGIDO
+                    "videoUrl TEXT" +
                     ")");
 
         }

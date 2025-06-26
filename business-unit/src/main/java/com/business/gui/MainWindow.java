@@ -20,7 +20,6 @@ public class MainWindow extends JFrame {
 
         JTabbedPane tabbedPane = new JTabbedPane();
 
-        // Panel historial
         JPanel historyPanel = new JPanel(new BorderLayout());
         historyList = new JList<>();
         JScrollPane scrollHistory = new JScrollPane(historyList);
