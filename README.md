@@ -81,30 +81,65 @@ Con activemq corriendo:
 
 
 1. Ejecutar los Feeders (news-feeder y youtube-feeder)
+
+
 -Accede al módulo correspondiente:
+
+
 news-feeder/src/main/java/com/newsfeeder/Main.java
+
+
 youtube-feeder/src/main/java/com/youtube/Main.java
+
+
 -Ejecuta la clase Main.
+
+
 -El programa te pedirá por consola que introduzcas un tema de búsqueda (por ejemplo, clima, tecnología, etc.).
+
+
 -Se publicarán eventos en tiempo real en ActiveMQ.
 
 
 2.Ejecutar el EventStore Builder
+
+
 -Ve a: eventstore-builder/src/main/java/com/builder/Main.java
+
+
 -Ejecuta la clase Main.
+
+
 -Este módulo se suscribirá a los eventos publicados en ActiveMQ y los almacenará en el directorio eventstore/{topic}/{ss}/{YYYYMMDD}.events.
 
+
 3.Ejecutar la Business Unit (Interfaz gráfica)
+
+
 -Accede a: business-unit/src/main/java/com/business/Application.java
+
+
 -Ejecuta el Main del módulo.
+
+
 -Se abrirá una interfaz gráfica que muestra el historial de eventos almacenados en eventstore.
+
+
 Si mientras tienes esta interfaz abierta vuelves a ejecutar algún feeder y el eventstore-builder, podrás actualizar la vista pulsando el botón "Actualizar historial".
 
 
 Ejemplos de uso (consultas, peticiones REST, etc.). 
+
+
 -Ejecuta youtube-feeder y escribe por consola el tema: clima.
+
+
 -A continuación, ejecuta eventstore-builder. Este recibirá y guardará los eventos en archivos.
+
+
 -Finalmente, ejecuta business-unit. Verás en la interfaz los eventos que has introducido.
+
+
 Si vuelves a repetir el proceso con otro tema, puedes actualizar la interfaz usando el botón.
 
 
